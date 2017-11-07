@@ -1,0 +1,15 @@
+preset: psr2
+
+risky: true
+
+linting: true
+
+finder:
+    path:
+        - "src"
+        - "tests"
+
+enabled:
+    - binary_operator_spaces
+    - ordered_imports
+    - short_array_syntax

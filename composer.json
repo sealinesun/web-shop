@@ -1,0 +1,40 @@
+{
+    "name": "kocsismate/ddd-webshop",
+    "description": "DDD Webshop",
+    "type": "project",
+    "keywords": ["DDD", "Webshop", "Workshop"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name":"Máté Kocsis",
+            "email":"kocsismate@woohoolabs.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/kocsismate/ddd-webshop/issues",
+        "source": "https://github.com/kocsismate/ddd-webshop"
+    },
+    "require": {
+        "php": "^7.1.0",
+        "moneyphp/money": "^3.0",
+        "ramsey/uuid": "^3.5.2",
+        "zendframework/zend-diactoros": "^1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0.0",
+        "squizlabs/php_codesniffer": "^2.8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
