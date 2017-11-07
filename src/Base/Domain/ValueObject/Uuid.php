@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Src\Product\Domain\ValueObject;
+namespace Src\Base\Domain\ValueObject;
 
 use Ramsey\Uuid\Uuid as RUuid;
 use Ramsey\Uuid\UuidFactory;

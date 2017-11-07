@@ -4,13 +4,13 @@ declare(strict_types=1);
 namespace Src\Product\Domain\Entity;
 
 use Money\Money;
-use Src\Product\Domain\ValueObject\Uuid;
+use Src\Base\Domain\ValueObject\Uuid;
 use Src\Product\Domain\Command\EditDetails;
 use Src\Product\Domain\Command\NewProduct;
 use Src\Product\Domain\ValueObject\Discount\DiscountInterface;
 use Src\Product\Domain\ValueObject\Discount\NullDiscount;
 
-class Product
+final class Product
 {
     /**
      * @var Uuid

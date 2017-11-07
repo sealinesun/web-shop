@@ -8,7 +8,7 @@ use Psr\Http\Message\ServerRequestInterface;
 use Src\Product\Domain\Command\SetPercentPriceDiscount;
 use Src\Product\Domain\Handler\SetDiscountHandler;
 
-final class SetDiscountAction
+final class SetPercentDiscountAction
 {
     /**
      * @var SetDiscountHandler

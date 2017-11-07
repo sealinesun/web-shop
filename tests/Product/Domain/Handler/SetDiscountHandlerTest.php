@@ -5,7 +5,7 @@ namespace Tests\Product\Domain\Handler;
 
 use Money\Money;
 use PHPUnit\Framework\TestCase;
-use Src\Product\Domain\ValueObject\Uuid;
+use Src\Base\Domain\ValueObject\Uuid;
 use Src\Product\Domain\Command\SetFixPriceDiscount;
 use Src\Product\Domain\Command\SetPercentPriceDiscount;
 use Src\Product\Domain\Entity\Product;

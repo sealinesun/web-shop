@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace Src\Product\Infrastructure;
 
+use InvalidArgumentException;
 use Src\Product\Domain\Entity\Product;
 use Src\Product\Domain\Repository\ProductRepositoryInterface;
-use Src\Product\Exception\ProductNotFound;
 
 final class ArrayProductRepository implements ProductRepositoryInterface
 {
@@ -32,13 +32,16 @@ final class ArrayProductRepository implements ProductRepositoryInterface
         return array_values($this->products);
     }
 
+    /**
+     * @throws InvalidArgumentException
+     */
     public function getProduct(string $sku): Product
     {
         if (isset($this->products[$sku])) {
             return $this->products[$sku];
         }
 
-        throw new ProductNotFound($sku);
+        throw new InvalidArgumentException("Product with SKU '$sku' was not found!");
     }
 
     public function saveProduct(Product $product): void
