@@ -37,9 +37,6 @@ final class Cart
         }
     }
 
-    /**
-     * @return Uuid
-     */
     public function getOwnerId(): Uuid
     {
         return $this->ownerId;

@@ -3,8 +3,8 @@ declare(strict_types=1);
 
 namespace Src\Cart\Domain\Repository;
 
+use Src\Base\Domain\ValueObject\Uuid;
 use Src\Cart\Domain\Entity\Cart;
-use Src\Product\Domain\ValueObject\Uuid;
 
 interface CartRepositoryInterface
 {

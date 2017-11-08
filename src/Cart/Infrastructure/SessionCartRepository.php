@@ -4,9 +4,9 @@ declare(strict_types=1);
 namespace Src\Cart\Infrastructure;
 
 use InvalidArgumentException;
+use Src\Base\Domain\ValueObject\Uuid;
 use Src\Cart\Domain\Entity\Cart;
 use Src\Cart\Domain\Repository\CartRepositoryInterface;
-use Src\Product\Domain\ValueObject\Uuid;
 
 final class SessionCartRepository implements CartRepositoryInterface
 {

@@ -55,7 +55,7 @@ final class Item
 
         $self = clone $this;
         $self->quantity += $item->getQuantity();
-        $self->productPrice += $item->getProductPrice();
+        $self->productPrice = $item->getProductPrice();
 
         return $self;
     }
